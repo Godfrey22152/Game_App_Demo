@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question {{ question_num }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Question {{ question_num }}</h1>
+    <p>{{ question }}</p>
+    <form method="post" action="{{ url_for('question', question_num=question_num) }}">
+        <!-- Display answer options as radio buttons -->
+        {% for option in options %}
+            <input type="radio" name="answer" value="{{ option[0] }}"> {{ option }}<br>
+        {% endfor %}
+        <input type="submit" value="Submit Answer">
+    </form>
+</body>
+</html>

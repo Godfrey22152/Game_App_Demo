@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Quiz Results</h1>
+    <p>Your Score: {{ score }}%</p>
+    <h2>Correct Answers:</h2>
+    <ul>
+        {% for question, answer in questions.items() %}
+            <li>{{ question }} Correct Answer: {{ answer }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
