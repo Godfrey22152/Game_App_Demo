@@ -1,57 +1,110 @@
 import os
+import random
+import json
 from flask import Flask, render_template, request, redirect, url_for, session
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
-questions = {
-    "0. Which year did Nigeria gain Independence?: ": "B",
-    "1. Which year did Nigeria gain Independence?: ": "B",
-    "2. What is the full meaning of INEC?: ": "A",
-    "3. How many colours are there in a Rainbow?: ": "C",
-    "4. What is the name of the Governor of Lagos state?: ": "D",
-    "5. What is the name of the Presidential candidate of the Labour Party?: ": "C",
-    "6. How many colours does Nigerian flag have?: ": "A"
-}
+# Load questions from the JSON file
+with open('questions.json', 'r') as file:
+    questions_data = json.load(file)
 
-options = [
-    ["A. 1966", "B. 1960", "C. 1999", "D. 1976"],   
-    ["A. 1966", "B. 1960", "C. 1999", "D. 1976"],
-    ["A. Independent National Electoral Commission", "B. Independent National Electoral Council",
-     "C. Independent National Electoral Cooperation", "D. International National Election Commission"],
-    ["A. 4", "B. 5", "C. 7", "D. 6"],    
-    ["A. Bola Ahmed Tinubu", "B. Prof. Yemi Osibanjo", "C. Adegboyega Oyetola", "D. Babajide Sanwo-Olu"],
-    ["A. Ezenwo Nyesom Wike", "B. Atiku Abubakar", "C. Peter Gregory Obi", "D. Bola Ahmed Tinubu"],
-    ["A. TWO Colours", "B. THREE Colours", "C. FOUR Colours", "D. ONE Colour"]
-]
+questions = questions_data.get('questions', [])
+
+# Create a list of tuples containing (question, options)
+question_option_pairs = [{'question': q['question'], 'options': q['options'], 'correct_option': q['correct_option']} for q in questions]
+
+# Shuffle the questions and options together
+random.shuffle(question_option_pairs)
 
 @app.route('/')
 def index():
-    session['user_answers'] = [None] * len(questions)
+    session['user_answers'] = [None] * len(question_option_pairs)
     return render_template('welcome.html')
+
+@app.route('/start_round', methods=['GET', 'POST'])
+def start_round():
+    random.shuffle(question_option_pairs)  # Shuffle questions and options together
+    session['question_option_pairs'] = question_option_pairs
+    session['user_answers'] = [None] * len(question_option_pairs)
+    return redirect(url_for('question', question_num=1))
+
 
 @app.route('/question/<int:question_num>', methods=['GET', 'POST'])
 def question(question_num):
     if request.method == 'POST':
         user_answer = request.form.get('answer')
-        session['user_answers'][question_num - 1] = user_answer  # Update user's answer
+        user_answers = session.get('user_answers')  # Step 1: Retrieve user answers
+        user_answers[question_num - 1] = user_answer  # Step 2: Update user answers
+        session['user_answers'] = user_answers  # Step 3: Store updated user answers back into session
         next_question_num = question_num + 1
-        if next_question_num > 6:
+
+
+#        print(f"User selected answer for question {question_num}: {user_answer}")  # Add this line for debugging
+
+        if next_question_num > 15:  # Display a maximum of 10 questions per round
             return redirect(url_for('results'))
+
         return redirect(url_for('question', question_num=next_question_num))
 
-    return render_template('question.html', question_num=question_num, question=list(questions.keys())[question_num - 1],
-                           options=options[question_num - 1], next_question_num=question_num + 1)
+    question_option_pairs = session.get('question_option_pairs')
+
+    if not question_option_pairs:
+        return redirect(url_for('index'))  # Redirect to the index page if no questions available
+
+    current_question_data = question_option_pairs[question_num - 1]
+    question_key = current_question_data['question']
+    options_list = current_question_data['options']
+
+    return render_template('question.html', question_num=question_num, question=question_key,
+                           options_list=options_list, next_question_num=question_num + 1)
 
 @app.route('/results')
 def results():
     user_answers = session.get('user_answers')
-    if user_answers is None:
-        return redirect(url_for('index'))  # Redirect to the index page if user answers are not available
+    question_option_pairs = session.get('question_option_pairs')
 
-    correct_guesses = sum(1 for user_ans, correct_ans in zip(user_answers, questions.values()) if user_ans == correct_ans)
-    score = int((correct_guesses / len(questions)) * 100)
-    return render_template('results.html', score=score, questions=questions, user_answers=user_answers)
+    if user_answers is None or question_option_pairs is None:
+        return redirect(url_for('index'))
+
+    # Get the correct answers for the current round
+    correct_answers = [q['correct_option'] for q in question_option_pairs]
+
+    # Calculate the score and retrieve question-answer pairs
+    correct_guesses, question_answer_pairs = check_answers(user_answers[:15], correct_answers[:15])
+
+    if len(correct_answers) == 0:
+        score = 0
+    else:
+        score = int((correct_guesses / 15) * 100)  # Calculate the score based on the number of questions
+
+    # Prepare data for displaying results
+    results_data = []
+    for question_num, (question, correct_ans, user_ans) in enumerate(question_answer_pairs, start=1):
+        result = {
+            'question_num': question_num,
+            'question': question,
+            'options': question_option_pairs[question_num - 1]['options'],
+            'correct_option': correct_ans,
+            'user_guess': user_ans,
+            'is_correct': correct_ans == user_ans
+        }
+        results_data.append(result)
+
+    return render_template('results.html', score=score, results_data=results_data)
+
+def check_answers(user_answers, correct_answers):
+    if len(user_answers) != len(correct_answers):
+        return 0, []  # Return 0 if the lengths of user and correct answers lists don't match
+
+    correct_guesses = sum(1 for user_ans, correct_ans in zip(user_answers, correct_answers) if user_ans == correct_ans)
+
+    question_answer_pairs = [(q['question'], correct_ans, user_ans) for q, correct_ans, user_ans in zip(question_option_pairs, correct_answers, user_answers)]
+
+    return correct_guesses, question_answer_pairs
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+

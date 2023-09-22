@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question {{ question_num }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="timer" style="font-weight: bold; text-align: center;"></div> <!-- Centered and bold timer -->
+    <h1>Question {{ question_num }}</h1>
+    <p>{{ question }}</p>
+    <form id="quizForm" method="post" action="{{ url_for('question', question_num=question_num) }}"> <!-- Added 'id="quizForm"' -->
+        <!-- Display answer options as radio buttons -->
+        {% for option in options_list %}
+            <input type="radio" name="answer" value="{{ option[0] }}" id="{{ option[0] }}">
+            <label for="{{ option[0] }}">{{ option }}</label><br>
+        {% endfor %}
+        <input type="submit" name="submit" value="{% if question_num == 15 %}Submit Quiz{% else %}Next Question{% endif %}"> <!-- Changed submit button text -->
+    </form>
+    {% if question_num > 1 %}
+        <form method="get" action="{{ url_for('question', question_num=question_num-1) }}">
+            <input type="submit" value="Previous" style="background-color: #008CBA; border: none; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display>
+        </form>
+    {% endif %}
+
+    <script>
+        var countDownDate = new Date();
+        countDownDate.setMinutes(countDownDate.getMinutes() + 15);
+
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML = minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "Time's Up!";
+                document.getElementById("quizForm").submit(); // Submit the form when time is up
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Results</title>
+    <style>
+        .start-button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Results</h1>
+    <p>Your score: {{ score }}%</p>
+    <table>
+        <tr>
+            <th>Question</th>
+            <th>Correct Answer</th>
+            <th>Your Answer</th>
+        </tr>
+        {% for question, correct_answer, user_answers in question_answer_pairs %}
+        <tr>
+            <td>{{ question }}</td>
+            <td>{{ correct_answer }}</td>
+            <td>{{ user_answers }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <form action="/start_round" method="get">
+        <button class="start-button" type="submit">Start Another Round</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Quiz Results</h1>
+    <p>Your score: {{ score }}%</p>
+    <table>
+        <tr>
+            <th>Question</th>
+            <th>Options</th>
+            <th>Your Answer</th>
+        </tr>
+        {% for question, options, correct_answer, user_answer in question_answer_pairs %}
+            <tr>
+                <td>{{ question }}</td>
+                <td>
+                    {% for option in options %}
+                        {% if user_answer == option %}
+                            <span style="color: green;">{{ option }}</span><br>
+                        {% elif option == correct_answer %}
+                            <span style="color: green;">{{ option }}</span><br>
+                        {% else %}
+                            <span style="color: red;">{{ option }}</span><br>
+                        {% endif %}
+                    {% endfor %}
+                </td>
+                <td>{{ user_answer }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <form action="/start_round" method="get">
+        <button type="submit" style="background-color: #007bff; color: #fff; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">Start Another Round</button>
+    </form>
+</body>
+</html>

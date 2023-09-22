@@ -1,0 +1,768 @@
+{
+  "questions": [
+    {
+      "question": "At a recent conference, a CIO was told that her organization should invest heavily in machine learning. Back at the office, she asked one of her senior leadership team to pull together an investment case. What is NOT a direct benefit they are likely to receive from using artificial intelligence and therefore should be excluded from the investment case?",
+      "options": [
+        "A. Predicting future scenarios",
+        "B. Augmenting human contribution and boosting productivity",
+        "C. Building a blame free culture",
+        "D. Finding new trends and correlations"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "Which statement about the Improvement Kata is CORRECT?",
+      "options": [
+        "A. It considers the organization's long-term vision or direction",
+        "B. It should be performed as time allows",
+        "C. It is a 7-step process",
+        "D. It focuses on short term goals"
+      ],
+      "correct_option": "A"
+    },
+    {
+      "question": "In the context of agile software development, which of the following is NOT a responsibility of IT Operations?",
+      "options": [
+        "A. Identifying security requirements",
+        "B. Provisioning the infrastructure",
+        "C. Managing the product backlog",
+        "D. Defining nonfunctional requirements"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "Which of the following is a characteristic of a high trust organizational culture?",
+      "options": [
+        "A. Learning from failures and new ideas",
+        "B. All of above",
+        "C. Cross-functional collaboration",
+        "D. Good information flow"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "Why is organizational culture a critical success factor for DevOps?",
+      "options": [
+        "A. It represents the values and behaviors that contribute to the unique social and psychological environment of an organization",
+        "B. It represents the way that an organization is structured and organized",
+        "C. It represents a command and control approach to the delivery of services",
+        "D. It reflects the strategic direction of the business' leadership"
+      ],
+      "correct_option": "A"
+    },
+    {
+      "question": "What is a primary benefit of DevOps toolchains?",
+      "options": [
+        "A. To ensure that the architectural design supports interoperability and consistency",
+        "B. All of these",
+        "C. To trace features' journeys from inception to live",
+        "D. To automate steps in the deployment pipeline"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "Which of the following DevOps roles is NOT YET well defined?",
+      "options": [
+        "A. Experience assurance",
+        "B. DevOps engineer",
+        "C. Systems engineer",
+        "D. Continuous delivery automation architect"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "An organization is implementing DevOps. The developers are concerned that their ITSM processes are too complex, slow and will not support DevOps principles and practices. Which IT framework will help the organization instill agile thinking into existing ITSM processes?",
+      "options": [
+        "A. Agile service management",
+        "B. Lean",
+        "C. Agile",
+        "D. ITIL"
+      ],
+      "correct_option": "A"
+    },
+    {
+      "question": "Which lean tool depicts the flow of information, materials and work across functional silos with an emphasis on quantifying and eliminating waste?",
+      "options": [
+        "A. Kanban",
+        "B. Improvement Kata",
+        "C. Continuous Delivery",
+        "D. Value stream mapping"
+      ],
+      "correct_option": "D"
+    },
+    {
+      "question": "The business 'why' of the Golden Circle represents an organization's",
+      "options": [
+        "A. Products and services",
+        "B. Competitive advantage",
+        "C. Profitability",
+        "D. Purpose, cause and belief"
+      ],
+      "correct_option": "D"
+    },
+    {
+      "question": "What determines which DevOps principles and practices will BEST benefit an organization?",
+      "options": [
+        "A. The availability of advanced tools",
+        "B. IT's capabilities and resources",
+        "C. Business strategies and goals",
+        "D. The commitment of early adopters"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "The Theory of Constraints supports which of the Three Ways",
+      "options": [
+        "A. The Third Way",
+        "B. The First Way",
+        "C. The Second Way",
+        "D. All of these"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "Which of the following is required for Continuous Integration?",
+      "options": [
+        "A. Deployment pipeline",
+        "B. Automated release management",
+        "C. Automated unit, integration and acceptance testing",
+        "D. Continuous delivery pipeline"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "Which DevOps practice relies on a deployment pipeline that enables push-button deployments on demand?",
+      "options": [
+        "A. DevSecOps",
+        "B. Continuous delivery",
+        "C. Continuous integration",
+        "D. Continuous testing"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "Which of the following ITSM processes are most critical to DevOps?",
+      "options": [
+        "A. Incident management",
+        "B. All of these",
+        "C. Service continuity management",
+        "D. Organizational change management"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "An organization has identified they have a culture of blame and fear, where incidents are not valued and failure is not embraced as a learning opportunity. There are many single points of failure and employees suffer daily as a result of the fragility of the systems, enduring painful war-rooms during frequent outages. What should this organization look to in order to improve the situation?",
+      "options": [
+        "A. Building a DevOps toolchain",
+        "B. Agile software development",
+        "C. Safety Culture",
+        "D. Site Reliability Engineering"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "When trying to effect major change, who should be engaged in planning activities and serve as change agents?",
+      "options": [
+        "A. People who need proof",
+        "B. Conservatives or naysayers",
+        "C. Early adopters",
+        "D. Management"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "What of the following is NOT a typical element in a DevOps toolchain?",
+      "options": [
+        "A. Version control",
+        "B. Service desk incident management systems",
+        "C. Test automation",
+        "D. Monitoring tools"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "Which of the following is a critical success factor for DevOps?",
+      "options": [
+        "A. Establishing a tool chain",
+        "B. Automating everything",
+        "C. Hiring DevOps Engineers",
+        "D. Management commitment to culture change"
+      ],
+      "correct_option": "D"
+    },
+    {
+      "question": "Which of the following is not a goal of DevOps leadership?",
+      "options": [
+        "A. Instil self-improvement",
+        "B. Control and evaluate workers using metrics",
+        "C. Translate local discoveries to global improvements",
+        "D. Help to improve self-diagnosis"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "Which of the Three Ways encourages peer review of production changes?",
+      "options": [
+        "A. All of these",
+        "B. The Third Way",
+        "C. The First Way",
+        "D. The Second Way"
+      ],
+      "correct_option": "D"
+    },
+    {
+      "question": "What does the concept of 'shift left' represent?",
+      "options": [
+        "A. Performing random tests on code that is committed to a continuous integration server",
+        "B. Doing more testing in production after deployment",
+        "C. Building quality into the software development process via early and continuous testing",
+        "D. Passing release packages to IT Operations following completion of a batch of development"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "An organization is struggling with the additional time it takes for security reviews after an Agile team completes a Sprint. The delay is impacting their ability to release. They want to include more security testing as part of their 'shift left' testing approach. Which DevOps practice would they need?",
+      "options": [
+        "A. DevSecOps",
+        "B. ChatOps",
+        "C. Vulnerability alerts",
+        "D. Continuous Testing"
+      ],
+      "correct_option": "A"
+    },
+    {
+      "question": "An organization recently held an internal DevOps Days. During one of the openspace sessions, it was suggested that there be more opportunities for dev, ops, security and other IT areas to interact and share. What sort of opportunities should the organization consider?",
+      "options": [
+        "A. Hackathons",
+        "B. Simulations",
+        "C. All of these",
+        "D. Immersion opportunities"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "Which roles are DevOps stakeholders?",
+      "options": [
+        "A. All of these",
+        "B. Support professionals",
+        "C. QA testers",
+        "D. Suppliers"
+      ],
+      "correct_option": "A"
+    },
+    {
+      "question": "Which is NOT a goal of DevOps?",
+      "options": [
+        "A. Improved quality of code",
+        "B. Fewer but higher-quality software releases",
+        "C. Improved productivity",
+        "D. Lower risk software deployments"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "An organization is implementing a disruptive application similar to the Simian Army. Which of the Three Ways are they introducing?",
+      "options": [
+        "A. The Second Way",
+        "B. The Third Way",
+        "C. The Phoenix Project",
+        "D. The First Way"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "An organization is looking to improve real-time collaboration between teams. Which DevOps practice should they be considering?",
+      "options": [
+        "A. ChatOps",
+        "B. Alerts",
+        "C. Kanban",
+        "D. Escalation"
+      ],
+      "correct_option": "A"
+    },
+    {
+      "question": "Which is a characteristic of a DevOps culture?",
+      "options": [
+        "A. All of these",
+        "B. Effective one-way communication from the top down",
+        "C. Shared vision, goals and incentives",
+        "D. Recognizing the best and brightest for their successes"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "An organization is preparing to automatically deploy every release that passes automated unit, integration, user acceptance and non-functional tests. Which DevOps practice are they applying?",
+      "options": [
+        "A. Continuous testing",
+        "B. Continuous integration",
+        "C. Continuous deployment",
+        "D. Continuous delivery"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "Which one of the following methodologies does least impact the establishment of DevOps methodology?",
+      "options": [
+        "A. Agile Software Delivery.",
+        "B. Waterfall Software Delivery.",
+        "C. Continuous Software Delivery.",
+        "D. Lean Manufacturing"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "In typical IT organizations why is there a typical conflict between development and operations teams?",
+      "options": [
+        "A. Because operations team knows more about test and production environments.",
+        "B. Because development team knows more about software products and services.",
+        "C. Because they have conflicting business goals and priorities.",
+        "D. Because they come from different backgrounds."
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "Which one of the following techniques makes DevOps a successful methodology to develop and deliver software?",
+      "options": [
+        "A. DevOps enables you to organize your teams around your organizational mission",
+        "B. All of these",
+        "C. DevOps enables you to quickly identify, fix and learn from errors.",
+        "D. DevOps enables you to create your software with built-in quality and monitoring report."
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "Which one of following statements about DevOps is incorrect?",
+      "options": [
+        "A. DevOps is suitable for brownfield software products and services.",
+        "B. DevOps is only suitable for start-up companies.",
+        "C. DevOps is suitable for greenfield software products and services.",
+        "D. Some of the most exemplary DevOps initiatives started in companies with giant and mature IT organizations."
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "How does a DevOps organization act in principle when it comes to financing its work?",
+      "options": [
+        "A. It finances special projects to serve its clients.",
+        "B. It finances teams in matrix organizations and these teams are responsible for handling their own budgets.",
+        "C. It finances products and services to serve its clients.",
+        "D. It finances development and operations teams separately, so they take care of their own business."
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "In a DevOps organization which one of the following elements does not directly contribute to your value stream?",
+      "options": [
+        "A. Errors, incidents and fixes.",
+        "B. Stakeholders of downstream work centers.",
+        "C. DevOps team.",
+        "D. Clients."
+      ],
+      "correct_option": "A"
+    },
+    {
+      "question": "Why is it a good idea to limit batch size of your continuous DevOps deliveries?",
+      "options": [
+        "A. All of these",
+        "B. By continuously delivering in production, your team will have the constant pride of contributing your organizational mission.",
+        "C. You will be quicker to identify root causes of issues and resolve them.",
+        "D. Potentially required rollbacks from your production systems will be less cumbersome."
+      ],
+      "correct_option": "A"
+    },
+    {
+      "question": "What is trunk in trunk based DevOps delivery?",
+      "options": [
+        "A. Developers collaborate on code in a single branch called 'trunk'.",
+        "B. Trunk is a special source code version controlling system which stores mission critical special projects of your DevOps organization.",
+        "C. Trunk is a special private branch in a developer workstation.",
+        "D. Trunk is the process of merging code in DevOps deliveries."
+      ],
+      "correct_option": "A"
+    },
+    {
+      "question": "For what type of business is DevOps the least suitable?",
+      "options": [
+        "A. Companies with unacceptable IT-related risks for the core business",
+        "B. Companies without in-house software development",
+        "C. Small companies or start-ups"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "Every team needs information. In DevOps, it is stressed to visualize certain information. Which piece of information should be made available, so the team has ready access to it?",
+      "options": [
+        "A. In which step is work accumulating, inhibiting flow?",
+        "B. What is management working on right now?",
+        "C. Which other projects do not have enough manpower?"
+      ],
+      "correct_option": "A"
+    },
+    {
+      "question": "What is a benefit of the way the Definition of Done is defined in DevOps?",
+      "options": [
+        "A. The team focuses less on the 'what' and more on 'who'",
+        "B. The team focuses less on the 'what and more' on 'where'",
+        "C. The team focuses less on the 'what' and more on 'why'",
+        "D. The team focuses less on the 'what' and more on 'when'"
+      ],
+      "correct_option": "D"
+    },
+    {
+      "question": "DevOps incorporates Lean Production principles in software development. What Lean principle is the core of DevOps?",
+      "options": [
+        "A. Continuous delivery",
+        "B. Self-organization",
+        "C. Welcoming change",
+        "D. Value chain thinking"
+      ],
+      "correct_option": "A"
+    },
+    {
+      "question": "What helps a DevOps team to successfully develop and deliver working software?",
+      "options": [
+        "A. Writing code for software to have built-in quality as a main goal",
+        "B. Identifying, fixing and learning from errors only after your project ended",
+        "C. Forming a DevOps team for short period of time during a project",
+        "D. Allowing your DevOps teams to develop their own specific mission"
+      ],
+      "correct_option": "A"
+    },
+    {
+      "question": "When value stream mapping, which metric is essential to measure for each step?",
+      "options": [
+        "A. Percentage complete and accurate",
+        "B. Key group comparison",
+        "C. Delay divided by duration",
+        "D. Work-in-Progress (WiP)",
+        "E. Cost of delay"
+      ],
+      "correct_option": "A. Percentage complete and accurate."
+    },
+    {
+      "question": "A company decides to do canary releases for some new functionality. What is a description of a canary release?",
+      "options": [
+        "A. Releasing to a limited number of users, before releasing it to all users",
+        "B. Test business hypotheses by having half of the users switch to a new release",
+        "C. Switching users from interacting with one release to the next within seconds"
+      ],
+      "correct_option": "A. Releasing to a limited number of users, before releasing it to all users."
+    },
+    {
+      "question": "Even more than Agile or Scrum, DevOps encourages continuous delivery of new functionality and continuous feedback from the customer. What does this achieve?",
+      "options": [
+        "A. It increases the team's responsibility",
+        "B. It yields a greater return on IT",
+        "C. It improves customer relations"
+      ],
+      "correct_option": "C. It improves customer relations."
+    },
+    {
+      "question": "In what way does DevOps take operational requirements into account?",
+      "options": [
+        "A. By considering the workflow from start to end",
+        "B. By defining all activities that must be done",
+        "C. By defining a feature set for first marketing"
+      ],
+      "correct_option": "B. By defining all activities that must be done."
+    },
+    {
+      "question": "Which architecture is a cause of the problems with DevOps that a microservice architecture solves?",
+      "options": [
+        "A. Mainframe architecture",
+        "B. Serverless architecture",
+        "C. Intel ×86 architecture",
+        "D. Monolithic architecture"
+      ],
+      "correct_option": "D. Monolithic architecture."
+    },
+    {
+      "question": "DevOps practices incorporate the value stream concept from Lean Production What is a value stream?",
+      "options": [
+        "A. The series of actions performed to fulfill any type of request",
+        "B. The amount of products that are delivered within a timeframe",
+        "C. The sequence of releases that deliver a working product"
+      ],
+      "correct_option": "A. The series of actions performed to fulfill any type of request."
+    },
+    {
+      "question": "Why does Operations benefit most from improved configuration management?",
+      "options": [
+        "A. It allows Development to take over Operations tasks if they have too much work",
+        "B. It allows Operations to automate configuration management using scripts",
+        "C. It allows Operations to respond to incidents more quickly than without",
+        "D. It allows Operations to be involved in earlier stages of the development"
+      ],
+      "correct_option": "C. It allows Operations to respond to incidents more quickly than without."
+    },
+    {
+      "question": "Your team works in three-week iterations and cannot get all the work for a batch done within the iteration. They frequently encounter bottlenecks. What is the best reaction of the team after they identify a bottleneck?",
+      "options": [
+        "A. Trust that they will solve the bottleneck in the next batch or iteration",
+        "B. Extend the length of this particular iteration to four weeks to remove the bottleneck",
+        "C. Discuss with the Product Owner which work can be shifted to another iteration"
+      ],
+      "correct_option": "B. Extend the length of this particular iteration to four weeks to remove the bottleneck."
+    },
+    {
+      "question": "What is the DevOps practice called that maximizes detection of common errors?",
+      "options": [
+        "A. Shift Right",
+        "B. Shift Down",
+        "C. Shift Up",
+        "D. Shift Left",
+        "E. Shift Defect"
+      ],
+      "correct_option": "D. Shift Left."
+    },
+    {
+      "question": "When will an organization find it difficult to adopt DevOps practices?",
+      "options": [
+        "A. When many bureaucratic processes are in place, because this causes inflexibility",
+        "B. When microservices are used, because they expand the attack surface",
+        "C. When operational complexity is high, because DevOps needs a simple architecture"
+      ],
+      "correct_option": "A. When many bureaucratic processes are in place, because this causes inflexibility."
+    },
+    {
+      "question": "Which one of the following is not one of the DevOps principles for good test automation?",
+      "options": [
+        "A. Tests should generate consistent, deterministic and repeatable results provided same conditions for different test runs.",
+        "B. Test Automation should give quick and early feedback about your quality of work.",
+        "C. With your test automation, avoid slow and periodic feedback. What you need is fast feedback whenever you or your developer attempts to check-in code to your trunk.",
+        "D. Never mix test driven development (TDD) together with your test automation approach"
+      ],
+      "correct_option": "D. Never mix test driven development (TDD) together with your test automation approach"
+    },
+    {
+      "question": "Which one of following release patterns does not enable you to do low risk DevOps code deployments in our production systems?",
+      "options": [
+        "A. Canary Deployment Pattern (The Dark Launch).",
+        "B. Blue-Green Deployment Pattern",
+        "C. Cluster Immune System Release Pattern.",
+        "D. Big bang code deployments of fully tested and validated releases."
+      ],
+      "correct_option": "D. Big bang code deployments of fully tested and validated releases."
+    },
+    {
+      "question": "What is one of best techniques to convert normal changes into standard changes?",
+      "options": [
+        "A. Publicly complain about bureaucracy and make everyone be aware of it.",
+        "B. Use your track record of successful automated deployments with standard changes",
+        "C. Negotiate with release managers.",
+        "D. Make sure normal changes are very carefully deployed to your production systems."
+      ],
+      "correct_option": "B. Use your track record of successful automated deployments with standard changes"
+    },
+    {
+      "question": "What is a widely used reusable asset to reinforce information security of deliverables from your DevOps team?",
+      "options": [
+        "A. Data storage systems.",
+        "B. Handling the logging of sensitive client information.",
+        "C. All of these",
+        "D. Data transfer between clients and software"
+      ],
+      "correct_option": "C. All of these"
+    },
+    {
+      "question": "What is not one of the major benefits of designing a safe system of work culture?",
+      "options": [
+        "A. Complexity of your systems will be managed, so problems in designs and operations will be quickly detected.",
+        "B. Leaders in your DevOps organization develop other leaders who create and continuously improve safe systems of work.",
+        "C. Problems are quickly resolved while they are small. Resolving problems will result in spontaneous construction of new organizational knowledge and experience.",
+        "D. DevOps team does no longer need to be careful and mindful to ensure quality."
+      ],
+      "correct_option": "D. DevOps team does no longer need to be careful and mindful to ensure quality."
+    },
+    {
+      "question": "What is telemetry?",
+      "options": [
+        "A. Telemetry is a widely known SaaS tool to plan and execute DevOps projects",
+        "B. Telemetry is the process of recording the behaviour of your systems.",
+        "C. Telemetry is a tool to design, code and execute automated unit tests.",
+        "D. Telemetry is a communication tool used by DevOps teams at geographically distributed locations."
+      ],
+      "correct_option": "B. Telemetry is the process of recording the behaviour of your systems."
+    },
+    {
+      "question": "In terms of fixing errors in your production systems what is the major benefit of using feature toggles embedded in configurations of your software applications?",
+      "options": [
+        "A. This is easiest way to fix a problem. It doesn't require an urgent code deployment.",
+        "B. All of these",
+        "C. Your DevOps team can take time to properly identify the root cause of an issue and improve their techniques to ensure such a problem will not likely happen again in the future.",
+        "D. You don't have to very urgently correct erroneous pieces in your deployment."
+      ],
+      "correct_option": "B. All of these."
+    },
+    {
+      "question": "A team stores not only source code, but many other things related to the IT system, such as tests, scripts, artifacts, libraries and many other things. Which DevOps principle has this team implemented?",
+      "options": [
+        "A. Deployment pipeline",
+        "B. Continuous delivery",
+        "C. Version control"
+      ],
+      "correct_option": "C. Version control"
+    },
+    {
+      "question": "What is not a proper use of the deployment pipeline?",
+      "options": [
+        "A. As an audit log that enables the monitoring of all changes",
+        "B. As an optimal way to link development and testing together",
+        "C. To accelerate the delivery of changes to Production",
+        "D. To always maintain the system in a working condition"
+      ],
+      "correct_option": "B. As an optimal way to link development and testing together"
+    },
+    {
+      "question": "The description of the Scaled Agile Framework (SAFe) model states:\nSAFe enterprises implement DevOps to break down silos and empower each Agile Release Train (ART) and Solution Train to continuously deliver new Features to their end users. Over time, the separation between development and operations is significantly reduced.\n\nWhy is this a limited view on DevOps?",
+      "options": [
+        "A. Because DevOps extends the agile ideas from IT production to the entire organization, all processes and the entire value chain",
+        "B. Because DevOps is better than other methodologies for developing software by incorporating continuous integration and continuous deployment",
+        "C. Because there is no limit to the improvements you can establish with DevOps, due to the continuous improvement requirement"
+      ],
+      "correct_option": "B. Because DevOps is better than other methodologies for developing software by incorporating continuous integration and continuous deployment."
+    },
+    {
+      "question": "IT work within DevOps is organized differently from more traditional practices, using newer infrastructure management technologies to make this possible. Which two technologies are meant?\nI. Automation\nII. Cloud computing\nIII. Containerization\nIV. Software robots\nV. Virtualization",
+      "options": [
+        "A. I&II",
+        "B. I&III",
+        "C. II&IV",
+        "D. V&III"
+      ],
+      "correct_option": "A. I&II"
+    },
+    {
+      "question": "Why is reducing the fragility of a business system difficult?",
+      "options": [
+        "A. Because doing so will disrupt the current product and service timelines",
+        "B. Because doing so will increase the number of incidents that occur temporarily",
+        "C. Because it is difficult to deliberately introduce chaos into the Production environment",
+        "D. Because of the high risks of business disruption when integrating large numbers of systems"
+      ],
+      "correct_option": "D. Because of the high risks of business disruption when integrating large numbers of systems"
+    },
+    {
+      "question": "Why does Operations benefit most from improved configuration management?",
+      "options": [
+        "A. It allows Development to take over Operations tasks if they have too much work",
+        "B. It allows Operations to automate configuration management using scripts",
+        "C. It allows Operations to be involved in earlier stages of the development",
+        "D. It allows Operations to respond to incidents more quickly than without"
+      ],
+      "correct_option": "D. It allows Operations to respond to incidents more quickly than without"
+    },
+    {
+      "question": "DevOps benefits from a ‘start-up spirit’ to focus on innovation and entrepreneurship. Which attitude to change fits with that start-up spirit in DevOps?",
+      "options": [
+        "A. Authoritarian",
+        "B. Autonomous",
+        "C. Conservatism",
+        "D. Experiments"
+      ],
+      "correct_option": "C. Conservatism"
+    },
+    {
+      "question": "Commercial off-the-shelf software (COTS) has both advantages and limitations for businesses. What is true about COTS?",
+      "options": [
+        "A. COTS supports continuous development with its fast implementation",
+        "B. COTS will save the business time and money, by reducing development time",
+        "C. Depending on the type of COTS used, the possibility of customization is limited"
+      ],
+      "correct_option": "B. COTS will save the business time and money, by reducing development time"
+    },
+    {
+      "question": "DevOps implies that not only the boundary between Development and Operations must disappear. Which other boundary must also disappear?",
+      "options": [
+        "A. The boundary between Development and marketing",
+        "B. The boundary between IT management and the rest of the IT department",
+        "C. The boundary between the finance department and Development",
+        "D. The boundary between the HR department and Operations",
+        "E. The boundary between the IT department and the business"
+      ],
+      "correct_option": "A. The boundary between Development and marketing"
+    },
+    {
+      "question": "In DevOps, the organization should start where they are and progress iteratively. What needs to change compared to a more traditional environment to facilitate progression?",
+      "options": [
+        "A. Cultural and organizational changes within the IT department only",
+        "B. Disappearance of the Development and Operations departments",
+        "C. Implementation of complex systems, to ensure confidence in the systems",
+        "D. Management principles and approaches to information technology"
+      ],
+      "correct_option": "D. Management principles and approaches to information technology"
+    },
+    {
+      "question": "When implementing the deployment pipeline, problems are encountered. Initially, there are not enough pre-developed tests to ensure steady operation of the Production environment. Which solution best addresses this problem?",
+      "options": [
+        "A) Create the pipeline and as many automations as possible, but do not use them until all the proper tests are in place.",
+        "C) Let the pipeline run with the developed tests and deal with the potential issues in Production when they arise.",
+        "B) Increase the coverage of the code with tests as technical debt, which must be addressed as soon as possible.",
+        "D) Use the pipeline as an integration system to deliver the written code to test and quality assurance (QA) only."
+      ],
+      "correct_option": "B. Increase the coverage of the code with tests as technical debt, which must be addressed as soon as possible."
+    },
+    {
+      "question": "Which statement BEST describes change fatigue?",
+      "options": [
+        "A. Apathy",
+        "B. Aggressive resistance",
+        "C. Exhaustion",
+        "D. Finger pointing"
+      ],
+      "correct_option": "A. Apathy"
+    },
+    {
+      "question": "Due to a tightly-coupled architecture, an organization is unable to increase the frequency of releases for a key service. When releases do occur, they are extremely painful and the organization's competitive advantage is eroding as a result. Which software development approach could be used to improve this situation?",
+      "options": [
+        "A. Test-driven development",
+        "B. Microservices",
+        "C. Containers",
+        "D. Chaos Monkey"
+      ],
+      "correct_option": "B. Microservices"
+    },
+    {
+      "question": "Which statement about DevOps teams is MOST accurate?",
+      "options": [
+        "A. They are responsible for establishing DevOps practices across the enterprise",
+        "B. They are accountable for the development of the deployment pipeline",
+        "C. They should have shared accountabilities",
+        "D. They should be a fixed team that works together on long term projects"
+      ],
+      "correct_option": "C. They should have shared accountabilities"
+    },
+    {
+      "question": "A company uses continuous deployment. Whose decision should it be when to release new functionality?",
+      "options": [
+        "A. The IT department",
+        "B. The user",
+        "C. The business",
+        "D. The customer"
+      ],
+      "correct_option": "C. The business"
+    },
+    {
+      "question": "What is a difficulty of a rigid or monolithic IT architecture?",
+      "options": [
+        "A. Updating to a new version without disabling the current version",
+        "B. Changing and developing the IT architecture itself is difficult to do",
+        "C. Modifying services within the architecture is done independently",
+        "D. Waiting for all components to be ready for a large-scale migration"
+      ],
+      "correct_option": "B. Changing and developing the IT architecture itself is difficult to do"
+    },
+    {
+      "question": "What are two common practices for reducing technical debt?",
+      "options": [
+        "A. Refactoring and facing the issue",
+        "B. Increasing budget and resources",
+        "C. Formal change and release management practices",
+        "D. Incident management and request fulfilment practices"
+      ],
+      "correct_option": "A. Refactoring and facing the issue"
+    }
+  ]
+}
+
+

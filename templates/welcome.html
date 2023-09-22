@@ -5,10 +5,10 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Welcome to the Trivia Quiz Game</h1>
+    <h1>Welcome Godfrey's Trivia Quiz Game</h1>
     <p>Enter your name and start the game:</p>
-    <form method="post" action="{{ url_for('question', question_num=1) }}">
-        <input type="text" name="player_name" placeholder="Your Name">
+    <form method="post" action="{{ url_for('start_round') }}">
+        <input type="text" name="player_name" placeholder="Your Name" required>
         <input type="submit" value="Start Game">
     </form>
 </body>

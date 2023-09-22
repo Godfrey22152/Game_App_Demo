@@ -1,0 +1,254 @@
+{
+  "questions": [
+    {
+      "question": "At a recent conference, a CIO was told that her organization should invest heavily in machine learning. Back at the office, she asked one of her senior leadership team to pull together an investment case. What is NOT a direct benefit they are likely to receive from using artificial intelligence and therefore should be excluded from the investment case?",
+      "options": [
+        "A. Predicting future scenarios",
+        "B. Augmenting human contribution and boosting productivity",
+        "C. Building a blame free culture",
+        "D. Finding new trends and correlations"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "Which statement about the Improvement Kata is CORRECT?",
+      "options": [
+        "A. It considers the organization's long-term vision or direction",
+        "B. It should be performed as time allows",
+        "C. It is a 7-step process",
+        "D. It focuses on short term goals"
+      ],
+      "correct_option": "A"
+    },
+    {
+      "question": "In the context of agile software development, which of the following is NOT a responsibility of IT Operations?",
+      "options": [
+        "A. Identifying security requirements",
+        "B. Provisioning the infrastructure",
+        "C. Managing the product backlog",
+        "D. Defining nonfunctional requirements"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "Which of the following is a characteristic of a high trust organizational culture?",
+      "options": [
+        "A. Learning from failures and new ideas",
+        "B. All of above",
+        "C. Cross-functional collaboration",
+        "D. Good information flow"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "Why is organizational culture a critical success factor for DevOps?",
+      "options": [
+        "A. It represents the values and behaviors that contribute to the unique social and psychological environment of an organization",
+        "B. It represents the way that an organization is structured and organized",
+        "C. It represents a command and control approach to the delivery of services",
+        "D. It reflects the strategic direction of the business' leadership"
+      ],
+      "correct_option": "A"
+    },
+    {
+      "question": "What is a primary benefit of DevOps toolchains?",
+      "options": [
+        "A. To ensure that the architectural design supports interoperability and consistency",
+        "B. All of these",
+        "C. To trace features' journeys from inception to live",
+        "D. To automate steps in the deployment pipeline"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "Which of the following DevOps roles is NOT YET well defined?",
+      "options": [
+        "A. Experience assurance",
+        "B. DevOps engineer",
+        "C. Systems engineer",
+        "D. Continuous delivery automation architect"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "An organization is implementing DevOps. The developers are concerned that their ITSM processes are too complex, slow and will not support DevOps principles and practices. Which IT framework will help the organization instill agile thinking into existing ITSM processes?",
+      "options": [
+        "A. Agile service management",
+        "B. Lean",
+        "C. Agile",
+        "D. ITIL"
+      ],
+      "correct_option": "A"
+    },
+    {
+      "question": "Which lean tool depicts the flow of information, materials and work across functional silos with an emphasis on quantifying and eliminating waste?",
+      "options": [
+        "A. Kanban",
+        "B. Improvement Kata",
+        "C. Continuous Delivery",
+        "D. Value stream mapping"
+      ],
+      "correct_option": "D"
+    },
+    {
+      "question": "The business 'why' of the Golden Circle represents an organization's",
+      "options": [
+        "A. Products and services",
+        "B. Competitive advantage",
+        "C. Profitability",
+        "D. Purpose, cause and belief"
+      ],
+      "correct_option": "D"
+    },
+    {
+      "question": "What determines which DevOps principles and practices will BEST benefit an organization?",
+      "options": [
+        "A. The availability of advanced tools",
+        "B. IT's capabilities and resources",
+        "C. Business strategies and goals",
+        "D. The commitment of early adopters"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "The Theory of Constraints supports which of the Three Ways",
+      "options": [
+        "A. The Third Way",
+        "B. The First Way",
+        "C. The Second Way",
+        "D. All of these"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "Which of the following is required for Continuous Integration?",
+      "options": [
+        "A. Deployment pipeline",
+        "B. Automated release management",
+        "C. Automated unit, integration and acceptance testing",
+        "D. Continuous delivery pipeline"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "Which DevOps practice relies on a deployment pipeline that enables push-button deployments on demand?",
+      "options": [
+        "A. DevSecOps",
+        "B. Continuous delivery",
+        "C. Continuous integration",
+        "D. Continuous testing"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "Which of the following ITSM processes are most critical to DevOps?",
+      "options": [
+        "A. Incident management",
+        "B. All of these",
+        "C. Service continuity management",
+        "D. Organizational change management"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "An organization has identified they have a culture of blame and fear, where incidents are not valued and failure is not embraced as a learning opportunity. There are many single points of failure and employees suffer daily as a result of the fragility of the systems, enduring painful war-rooms during frequent outages. What should this organization look to in order to improve the situation?",
+      "options": [
+        "A. Building a DevOps toolchain",
+        "B. Agile software development",
+        "C. Safety Culture",
+        "D. Site Reliability Engineering"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "When trying to effect major change, who should be engaged in planning activities and serve as change agents?",
+      "options": [
+        "A. People who need proof",
+        "B. Conservatives or naysayers",
+        "C. Early adopters",
+        "D. Management"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "What of the following is NOT a typical element in a DevOps toolchain?",
+      "options": [
+        "A. Version control",
+        "B. Service desk incident management systems",
+        "C. Test automation",
+        "D. Monitoring tools"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "Which of the following is a critical success factor for DevOps?",
+      "options": [
+        "A. Establishing a tool chain",
+        "B. Automating everything",
+        "C. Hiring DevOps Engineers",
+        "D. Management commitment to culture change"
+      ],
+      "correct_option": "D"
+    },
+    {
+      "question": "Which of the following is not a goal of DevOps leadership?",
+      "options": [
+        "A. Instil self-improvement",
+        "B. Control and evaluate workers using metrics",
+        "C. Translate local discoveries to global improvements",
+        "D. Help to improve self-diagnosis"
+      ],
+      "correct_option": "B"
+    },
+    {
+      "question": "Which of the Three Ways encourages peer review of production changes?",
+      "options": [
+        "A. All of these",
+        "B. The Third Way",
+        "C. The First Way",
+        "D. The Second Way"
+      ],
+      "correct_option": "D"
+    },
+    {
+      "question": "What does the concept of 'shift left' represent?",
+      "options": [
+        "A. Performing random tests on code that is committed to a continuous integration server",
+        "B. Doing more testing in production after deployment",
+        "C. Building quality into the software development process via early and continuous testing",
+        "D. Passing release packages to IT Operations following completion of a batch of development"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "An organization is struggling with the additional time it takes for security reviews after an Agile team completes a Sprint. The delay is impacting their ability to release. They want to include more security testing as part of their 'shift left' testing approach. Which DevOps practice would they need?",
+      "options": [
+        "A. DevSecOps",
+        "B. ChatOps",
+        "C. Vulnerability alerts",
+        "D. Continuous Testing"
+      ],
+      "correct_option": "A"
+    },
+    {
+      "question": "An organization recently held an internal DevOps Days. During one of the openspace sessions, it was suggested that there be more opportunities for dev, ops, security and other IT areas to interact and share. What sort of opportunities should the organization consider?",
+      "options": [
+        "A. Hackathons",
+        "B. Simulations",
+        "C. All of these",
+        "D. Immersion opportunities"
+      ],
+      "correct_option": "C"
+    },
+    {
+      "question": "Which roles are DevOps stakeholders?",
+      "options": [
+        "A. All of these",
+        "B. Support professionals",
+        "C. QA testers",
+        "D. Suppliers"
+      ],
+      "correct_option": "A"
+    }
+  ]
+}
